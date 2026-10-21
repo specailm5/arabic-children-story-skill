@@ -1,5 +1,5 @@
-# مهارة أدب الطفل واليافعين
-### (Arabic Children & YA Literature Skill)
+# مهارة حكايات الأطفال واليافعين
+### (Arabic Children's & YA Tales Skill)
 
 <p align="center">
   <a href="https://github.com/specailm5/arabic-children-story-skill/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/specailm5/arabic-children-story-skill?style=flat-square"></a>
@@ -8,11 +8,11 @@
   <img alt="Agent Skills" src="https://img.shields.io/badge/Agent%20Skills-compatible-5B21B6?style=flat-square">
 </p>
 
-**Arabic children's literature skill for AI agents** — matches content, language, length and format to the age stage; builds story, rhythm and refrain; integrates values without preaching; controls vocabulary and sentence length: `«كان ياما كان… ولد صادق»` ← `«وجد سامر محفظة. نظر حوله. لا أحد.»`. Works with Claude Code, Codex, Antigravity and VS Code agent harnesses.
+**Arabic children's tales skill for AI agents** — matches content, language, length and format to the age stage; builds story, rhythm and refrain; integrates values without preaching; controls vocabulary and sentence length: `«كان ياما كان… ولد صادق»` ← `«وجد سامر محفظة. نظر حوله. لا أحد.»`. Works with Claude Code, Codex, Antigravity and VS Code agent harnesses.
 
 🔗 **الموقع المرجعي (المراحل والقصة واللغة والنماذج): [specailm5.github.io/arabic-children-story-skill](https://specailm5.github.io/arabic-children-story-skill/)**
 
-> مهارة برمجية ولغوية لنماذج الذكاء الاصطناعي والمحررات الذكية (Codex، Claude Code، Antigravity IDE، VS Code Agent Harness) لكتابة أدب الطفل العربي وتحريره وتشخيصه، استناداً إلى **«أدب الأطفال: علم وفن»** لأحمد نجيب، و**«أدب الطفل العربي»** لحسن شحاته، و**«أدب الأطفال»** لأنس داود.
+> مهارة برمجية ولغوية لنماذج الذكاء الاصطناعي والمحررات الذكية (Codex، Claude Code، Antigravity IDE، VS Code Agent Harness) لكتابة حكايات الأطفال العرب وتحريرها وتشخيصه، استناداً إلى **«أدب الأطفال: علم وفن»** لأحمد نجيب، و**«أدب الطفل العربي»** لحسن شحاته، و**«أدب الأطفال»** لأنس داود.
 
 ---
 
