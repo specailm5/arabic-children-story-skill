@@ -7,8 +7,8 @@ on:
       - main
     paths:
       - 'skills/**'
-      - '.agents/skills/arabic-children-skill/**'
-      - '.claude/skills/arabic-children-skill/**'
+      - '.agents/skills/arabic-children-story-skill/**'
+      - '.claude/skills/arabic-children-story-skill/**'
   workflow_dispatch:
 
 concurrency:

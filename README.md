@@ -2,15 +2,15 @@
 ### (Arabic Children & YA Literature Skill)
 
 <p align="center">
-  <a href="https://github.com/specailm5/arabic-children-skill/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/specailm5/arabic-children-skill?style=flat-square"></a>
-  <a href="https://github.com/specailm5/arabic-children-skill/commits/master"><img alt="Last commit" src="https://img.shields.io/github/last-commit/specailm5/arabic-children-skill?style=flat-square"></a>
-  <a href="https://specailm5.github.io/arabic-children-skill/"><img alt="Docs" src="https://img.shields.io/badge/docs-live-brightgreen?style=flat-square"></a>
+  <a href="https://github.com/specailm5/arabic-children-story-skill/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/specailm5/arabic-children-story-skill?style=flat-square"></a>
+  <a href="https://github.com/specailm5/arabic-children-story-skill/commits/master"><img alt="Last commit" src="https://img.shields.io/github/last-commit/specailm5/arabic-children-story-skill?style=flat-square"></a>
+  <a href="https://specailm5.github.io/arabic-children-story-skill/"><img alt="Docs" src="https://img.shields.io/badge/docs-live-brightgreen?style=flat-square"></a>
   <img alt="Agent Skills" src="https://img.shields.io/badge/Agent%20Skills-compatible-5B21B6?style=flat-square">
 </p>
 
 **Arabic children's literature skill for AI agents** — matches content, language, length and format to the age stage; builds story, rhythm and refrain; integrates values without preaching; controls vocabulary and sentence length: `«كان ياما كان… ولد صادق»` ← `«وجد سامر محفظة. نظر حوله. لا أحد.»`. Works with Claude Code, Codex, Antigravity and VS Code agent harnesses.
 
-🔗 **الموقع المرجعي (المراحل والقصة واللغة والنماذج): [specailm5.github.io/arabic-children-skill](https://specailm5.github.io/arabic-children-skill/)**
+🔗 **الموقع المرجعي (المراحل والقصة واللغة والنماذج): [specailm5.github.io/arabic-children-story-skill](https://specailm5.github.io/arabic-children-story-skill/)**
 
 > مهارة برمجية ولغوية لنماذج الذكاء الاصطناعي والمحررات الذكية (Codex، Claude Code، Antigravity IDE، VS Code Agent Harness) لكتابة أدب الطفل العربي وتحريره وتشخيصه، استناداً إلى **«أدب الأطفال: علم وفن»** لأحمد نجيب، و**«أدب الطفل العربي»** لحسن شحاته، و**«أدب الأطفال»** لأنس داود.
 
@@ -38,9 +38,9 @@
 ## 📂 بنية المهارة ومكوناتها
 
 <pre dir="rtl"><code>
-arabic-children-skill/
+arabic-children-story-skill/
 │
-├── skills/arabic-children-skill/          # المهارة (تركيب Agent Skills القياسي)
+├── skills/arabic-children-story-skill/          # المهارة (تركيب Agent Skills القياسي)
 │   ├── SKILL.md                           # الدليل الأساسي: من العمر إلى النص
 │   ├── references/                        # المراجع التفصيلية
 │   │   ├── stages.md                      # المراحل العمرية
@@ -53,9 +53,9 @@ arabic-children-skill/
 │
 ├── docs/                                  # الموقع المرجعي (GitHub Pages)
 │
-├── .agents/skills/arabic-children-skill/  # مسار Codex و Antigravity
+├── .agents/skills/arabic-children-story-skill/  # مسار Codex و Antigravity
 │
-└── .claude/skills/arabic-children-skill/  # مسار Claude Code
+└── .claude/skills/arabic-children-story-skill/  # مسار Claude Code
 </code></pre>
 
 ---
@@ -69,14 +69,14 @@ arabic-children-skill/
 ### أولاً: التثبيت بأمر واحد عبر `npx` (الطريقة الأسرع — موصى به)
 
 ```bash
-npx skills add specailm5/arabic-children-skill -g -y
+npx skills add specailm5/arabic-children-story-skill -g -y
 ```
 
 ولاختيار بيئات بعينها أو التثبيت داخل مشروع محدد:
 
 ```bash
-npx skills add specailm5/arabic-children-skill -a claude-code -a codex
-npx skills add specailm5/arabic-children-skill --skill arabic-children-skill -g -y
+npx skills add specailm5/arabic-children-story-skill -a claude-code -a codex
+npx skills add specailm5/arabic-children-story-skill --skill arabic-children-story-skill -g -y
 ```
 
 ---
@@ -87,37 +87,37 @@ npx skills add specailm5/arabic-children-skill --skill arabic-children-skill -g 
 
 ```powershell
 # مصدر المهارة داخل المستودع
-$src = "skills\arabic-children-skill"
+$src = "skills\arabic-children-story-skill"
 
 # 1. تثبيت لبيئة Claude Code
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\arabic-children-skill"
-Copy-Item -Recurse -Force "$src\*" "$env:USERPROFILE\.claude\skills\arabic-children-skill\"
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\arabic-children-story-skill"
+Copy-Item -Recurse -Force "$src\*" "$env:USERPROFILE\.claude\skills\arabic-children-story-skill\"
 
 # 2. تثبيت لبيئة Codex و Agent Skills العامة
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills\arabic-children-skill"
-Copy-Item -Recurse -Force "$src\*" "$env:USERPROFILE\.agents\skills\arabic-children-skill\"
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills\arabic-children-story-skill"
+Copy-Item -Recurse -Force "$src\*" "$env:USERPROFILE\.agents\skills\arabic-children-story-skill\"
 
 # 3. تثبيت لبيئة Google Antigravity / Gemini
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.gemini\config\skills\arabic-children-skill"
-Copy-Item -Recurse -Force "$src\*" "$env:USERPROFILE\.gemini\config\skills\arabic-children-skill\"
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.gemini\config\skills\arabic-children-story-skill"
+Copy-Item -Recurse -Force "$src\*" "$env:USERPROFILE\.gemini\config\skills\arabic-children-story-skill\"
 ```
 
 #### لنظام macOS / Linux (Bash):
 
 ```bash
-src=skills/arabic-children-skill
+src=skills/arabic-children-story-skill
 
 # 1. لبيئة Claude Code
-mkdir -p ~/.claude/skills/arabic-children-skill
-cp -r "$src/." ~/.claude/skills/arabic-children-skill/
+mkdir -p ~/.claude/skills/arabic-children-story-skill
+cp -r "$src/." ~/.claude/skills/arabic-children-story-skill/
 
 # 2. لبيئة Codex و Agent Harness
-mkdir -p ~/.agents/skills/arabic-children-skill
-cp -r "$src/." ~/.agents/skills/arabic-children-skill/
+mkdir -p ~/.agents/skills/arabic-children-story-skill
+cp -r "$src/." ~/.agents/skills/arabic-children-story-skill/
 
 # 3. لبيئة Antigravity / Gemini
-mkdir -p ~/.gemini/config/skills/arabic-children-skill
-cp -r "$src/." ~/.gemini/config/skills/arabic-children-skill/
+mkdir -p ~/.gemini/config/skills/arabic-children-story-skill
+cp -r "$src/." ~/.gemini/config/skills/arabic-children-story-skill/
 ```
 
 ---
@@ -125,15 +125,15 @@ cp -r "$src/." ~/.gemini/config/skills/arabic-children-skill/
 ### ثالثاً: التثبيت المحلي داخل مشروع محدد (VS Code Workspace Harness)
 
 ```powershell
-New-Item -ItemType Directory -Force -Path ".agents\skills\arabic-children-skill"
-Copy-Item -Recurse -Force "path\to\skills\arabic-children-skill\*" ".agents\skills\arabic-children-skill\"
+New-Item -ItemType Directory -Force -Path ".agents\skills\arabic-children-story-skill"
+Copy-Item -Recurse -Force "path\to\skills\arabic-children-story-skill\*" ".agents\skills\arabic-children-story-skill\"
 ```
 
 ---
 
 ### رابعاً: الاستخدام اليدوي (Direct System Prompt / Custom Instructions)
 
-* افتح ملف [`skills/arabic-children-skill/SKILL.md`](skills/arabic-children-skill/SKILL.md) وانسخ محتواه وضعه في خانة **التعليمات المخصصة (Custom Instructions)** أو **System Prompt**.
+* افتح ملف [`skills/arabic-children-story-skill/SKILL.md`](skills/arabic-children-story-skill/SKILL.md) وانسخ محتواه وضعه في خانة **التعليمات المخصصة (Custom Instructions)** أو **System Prompt**.
 
 ---
 
@@ -320,7 +320,7 @@ Copy-Item -Recurse -Force "path\to\skills\arabic-children-skill\*" ".agents\skil
 
 ## 📬 الدعم
 
-للأسئلة والاقتراحات: [افتح قضية](https://github.com/specailm5/arabic-children-skill/issues).
+للأسئلة والاقتراحات: [افتح قضية](https://github.com/specailm5/arabic-children-story-skill/issues).
 
 ---
 

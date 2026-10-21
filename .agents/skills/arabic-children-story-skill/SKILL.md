@@ -1,5 +1,5 @@
 ---
-name: arabic-children-skill
+name: arabic-children-story-skill
 description: "Mastery guide and workshop for Arabic children's and young-adult literature: picture books, stories, poems and songs, stage and media scripts, and graded readers. Matches content, language, length and format to the age stage; applies readability criteria; builds story, rhythm and refrain; integrates values without preaching; controls vocabulary and sentence length; and diagnoses the draft against child-development and literary criteria. Grounded in «أدب الأطفال: علم وفن» لأحمد نجيب, «أدب الطفل العربي» لحسن شحاته, and «أدب الأطفال» لأنس داود. Refuses to flatten language into baby talk or to preach. Use when the user says: «قصة أطفال», «أدب الطفل», «حكاية للأطفال», «أنشودة», «نشيد», «مسرح أطفال», «كتاب مصور», «يافعين», «children's story», «picture book»."
 license: MIT
 metadata:
@@ -11,9 +11,9 @@ metadata:
         «أدب الأطفال» لأنس داود (الشعر والأنشودة).
     companion-skills: arabic-story-skill, arabic-writing-skill, arabic-grammar-skill, arabic-editing-skill
     language: العربية الفصحى
-    github-path: .agents/skills/arabic-children-skill
+    github-path: .agents/skills/arabic-children-story-skill
     github-ref: refs/heads/master
-    github-repo: https://github.com/specailm5/arabic-children-skill
+    github-repo: https://github.com/specailm5/arabic-children-story-skill
 ---
 
 # مهارة أدب الطفل واليافعين
